@@ -1,0 +1,36 @@
+/* app/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #030224;
+  --primary-purple: #270546;
+  --text-white: #ffffff;
+}
+
+body {
+  color: #1f2937;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-purple) 100%);
+}
+
+/* Smooth theme transitions */
+html,
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode defaults */
+body {
+  background-color: white;
+  color: #111827; /* gray-900 */
+}
+
+/* Dark mode overrides */
+.dark body {
+  background-color: #111827; /* gray-900 */
+  color: #f3f4f6; /* gray-100 */
+}

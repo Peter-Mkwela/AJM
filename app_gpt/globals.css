@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* fonts (link fonts in layout head or _app) */
+:root{
+  --accent-blue: #4b6bff;
+  --accent-purple: #6a4bd6;
+  --text-white: #ffffff;
+}
+
+/* subtle glass card */
+.card-glass {
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.06);
+  backdrop-filter: blur(6px);
+}
+
+/* small utility */
+.text-accent { color: var(--accent-purple); }
